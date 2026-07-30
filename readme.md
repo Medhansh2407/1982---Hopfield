@@ -1,12 +1,25 @@
 # Hopfield Network from Scratch
 
-A from-scratch implementation of the classical **Hopfield Network** proposed by **John Hopfield (1982)**.
+So this repo is an implementation of the classical ***Hopfield Network*** introduced by ***Sir John Hopfield*** in 
+his paper (Neural Networks and Physical Systems with Emergent Collective Computational Abilities , 1982).
 
-This repository implements the complete Hopfield network using only core Python, with an emphasis on understanding the underlying mathematics rather than relying on machine learning libraries. Alongside the implementation, the repository contains several experiments exploring associative memory, energy minimization, spurious states, and the importance of bipolar representations.
+
+This repository implements the complete Hopfield network using only core python with an emphasis on the underlying
+mathematics rather than using pre-cooked machine learning libraries , alongside the implementation the repository 
+also contains the validation if the network works and some fun experiments - in the folder breaking_the_law , which
+also includes some experiments discussed in the paper as-well , questioning the assumption of the networks. This repo is a work in progress just like any other research project and more experiments are being worked 
+on and would be added with time in that folder.
+
+
+a full biological intuition and a mathematical proof for the key equations in this paper are covered in my blog post about the paper implementation and further mistakes which one could make while implementing this paper are covered
+in my implementation diary posted under the /blogs in my website.
+
+
+the website - https://medhanshnarang.vercel.app/
 
 ---
 
-## Features
+## The Features Implemented
 
 - Classical Hopfield Network implementation
 - Hebbian learning rule for weight construction
@@ -44,9 +57,17 @@ This repository implements the complete Hopfield network using only core Python,
 
 # Background
 
-Hopfield Networks are one of the earliest recurrent neural networks and can be viewed as **associative memory systems**.
+Hopfield Networks are one of the earlies recurrent neural networks and these networks implemented the concept of 
+associative memory commonly known as content addressable memory in the field of CS
 
-Instead of learning to classify data, a Hopfield Network stores patterns as stable energy minima. Given a noisy or partially corrupted pattern, the network iteratively updates its neurons until it converges to a nearby stored memory.
+
+So the way it works is quite impressive and mind blowing , the approach to this working is simply a combination 
+of biological intuition , physics loss and mathematical equations to bring this to test.
+
+So unlike the MLPs we use today which learns on the data and trains on it through the gradient descent and 
+backpropagating algorithms , the Hopfield networks store the memory patterns as a stable energy minima and so 
+a noisy corrupted memory would thus converge to the local minima which is the stable point or the memory patterns ,
+and so how this takes place is that the network iteratively updates its neurons until it converges to a local minima.
 
 The dynamics are governed by an energy function, ensuring that each asynchronous update never increases the system's energy.
 
@@ -164,6 +185,7 @@ Building this implementation from scratch helped me better understand:
 - attractor dynamics
 - energy-based models
 - why bipolar states are fundamental to classical Hopfield Networks
+- the ability to connect 3 different fields together to draw intuitions from the overlapping ideas.
 
 The accompanying experiments also explore how changing core assumptions affects convergence and memory retrieval.
 
