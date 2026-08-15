@@ -212,6 +212,12 @@ Proceedings of the National Academy of Sciences, 1982.
 
 ---
 
+```python
+pip install -r requirements.txt
+```
+
+---
+
 ## License
 
 MIT License
