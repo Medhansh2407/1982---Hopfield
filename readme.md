@@ -8,6 +8,8 @@ mathematics rather than using pre-cooked machine learning libraries , alongside 
 also contains the validation if the network works and some fun experiments - in the folder breaking_the_law , which
 also includes some experiments discussed in the paper as-well , questioning the assumption of the networks. This repo is a work in progress just like any other research project and more experiments are being worked 
 on and would be added with time in that folder.
+
+
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9a2a729e-6770-4490-8213-f3857310251f" />
 
 
