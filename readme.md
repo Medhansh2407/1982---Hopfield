@@ -14,11 +14,9 @@ on and would be added with time in that folder.
 
 
 
-a full biological intuition and a mathematical proof for the key equations in this paper are covered in my blog post about the paper implementation and further mistakes which one could make while implementing this paper are covered
-in my implementation diary posted under the /blogs in my website.
+a blog on this paper implementation to refer to  , to get the crux of the paper: https://medhanshnarang.vercel.app/papers/1982-neural-networks-and-physical-systems-with-emergent-collective-computational-abilities
 
 
-the website - https://medhanshnarang.vercel.app/
 
 ---
 
@@ -86,9 +84,7 @@ The implementation includes:
 
 The connection matrix is constructed using the classical Hebbian learning rule
 
-\[
-W_{ij}=\sum_p x_i^{(p)}x_j^{(p)}
-\]
+<img width="157" height="41" alt="Screenshot 2026-08-15 162640" src="https://github.com/user-attachments/assets/1ed16fa2-0308-403c-8ff9-90fe850106cc" />
 
 with self-connections removed.
 
@@ -111,9 +107,8 @@ which allows the classical Hopfield energy formulation to work correctly.
 
 The network energy is computed as
 
-\[
-E=-\frac12\sum_i\sum_j W_{ij}x_ix_j
-\]
+<img width="136" height="39" alt="Screenshot 2026-08-15 162713" src="https://github.com/user-attachments/assets/ab5c260a-fa8b-4ea3-b548-7b754f85894a" />
+
 
 During recall, asynchronous neuron updates monotonically decrease (or preserve) the energy until convergence.
 
