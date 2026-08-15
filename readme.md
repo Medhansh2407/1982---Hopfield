@@ -1,5 +1,9 @@
 # Hopfield Network from Scratch
 
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9a2a729e-6770-4490-8213-f3857310251f" />
+
+
 So this repo is an implementation of the classical ***Hopfield Network*** introduced by ***Sir John Hopfield*** in 
 his paper (Neural Networks and Physical Systems with Emergent Collective Computational Abilities , 1982).
 
