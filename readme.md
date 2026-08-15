@@ -42,11 +42,11 @@ a blog on this paper implementation to refer to  , to get the crux of the paper:
 │
 ├── checking_net/
 │   ├── basic_recall.py
-│   ├── multi_pattern_recall.py
+│   ├── multi_valley_recall.py
 |
 ├── breaking_the_law/
 │   ├── breaking_bipolar_single_pattern.py
-│   └── breaking_bipolar_multi_pattern.py
+│   └── breaking_bipolar_multi_valley.py
 │
 ├── notebooks/
 │   └── hopfield_network.ipynb
@@ -149,7 +149,7 @@ This experiment investigates why the classical Hopfield formulation relies on bi
 ## Example Usage
 
 ```python
-from hopfieldnetwork import Network
+from src.hopfieldnetwork import Network
 
 patterns = [
     [1,1,1,1,
