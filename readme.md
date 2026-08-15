@@ -43,9 +43,10 @@ the website - https://medhanshnarang.vercel.app/
 ├── src/
 │   └── hopfieldnetwork.py
 │
-├── experiments/
+├── checking_net/
 │   ├── basic_recall.py
 │   ├── multi_pattern_recall.py
+├── breaking_the_law/
 │   ├── breaking_bipolar_single_pattern.py
 │   └── breaking_bipolar_multi_pattern.py
 │
